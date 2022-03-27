@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mwigo Jonathan Mark">
+        <title>Web Music Player</title>
+
+        <!-- CSS FILES -->
+        <!-- BootStrap CSS -->
+        <link rel="stylesheet" href="../static/css/vendor/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../static/css/player.css">
+    </head>
+    <body role="main" class="bg-dark">
+        <div class="container player my-5">
+            <div class="row w-100"><!--
+                <div class="col-lg-3 col-sm-12 rounded"> -->
+                    <!-- <input type="file" class="custom-file-input"> -->
+                   <!-- <ul class="nav">
+                        <li class="nav-link"><button type="button" role="button" class="btn" title="play list"><span><img src="../static/icons/icons/music-note-list.svg" alt="Song Thumbnail" width="50px"></span></button></li>
+                        <li class="nav-link"><button type="button" role="button" class="btn" title="songs"><span><img src="../static/icons/icons/music-note.svg" alt="Song Thumbnail" width="50px"></span></button></li>
+                        <li class="nav-link">
+                            <input type="file" id="input" multiple hidden> -->
+                            <!--webkitdirectory directory <button type="button" role="button" class="btn" title="open file" onclick="document.getElementById('input').click()"><span><img src="../static/icons/icons/file-earmark-play.svg" alt="Song Thumbnail" width="50px"></span></button> -->
+                            <!-- <label class="btn" for="input"><span><img src="../static/icons/icons/file-earmark-play.svg" alt="Song Thumbnail" width="50px"></span></label>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="col-12">
+                    <div class="card text-center" id="playerView">
+                        <div class="align-content-center">
+                            <div class="details">
+                                <div class="track-art"></div>
+                                <div class="card-title track-name">Song Name</div>
+                                <div class="track-artist">Artist</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2 current-time"></div>
+                                <div class="col-6"><input type="range" class="seek_slider w-100" min="0" max="" step="0.5" id="customRange3" onchange="seekTo()"></div>
+                                <div class="col-2 total-duration"></div>
+                                <div class="col-2"><input type="range" class="volume_slider w-100" min="0" max="" step="0.5" id="customRange3" onchange="setVolume()"></div>
+                            </div>
+                            <div class="row buttons">
+                                <div class="col-4">
+                                    <button class="btn rounded-circle prev-track" title="previous" onclick="prevTrack()">
+                                        <img src="../static/icons/icons/skip-start.svg" alt="Song Thumbnail" width="50px">
+                                    </button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn rounded-circle playpause-track" title="play" onclick="playpauseTrack()">
+                                        <img src="../static/icons/icons/play-circle.svg" alt="Song Thumbnail" width="50px">
+                                    </button>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn rounded-circle next-track" title="next" onclick="nextTrack()">
+                                        <img src="../static/icons/icons/skip-end.svg" alt="Song Thumbnail" width="50px">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  SCRIPTS -->
+        <!-- jQuery JavaScript -->
+        <script src="../static/js/vendor/jquery.min.js"></script>
+        <!-- BootStrap JavaScript -->
+        <script src="../static/js/vendor/bootstrap.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script src="../static/js/player.js"></script>
+     </body>
+</html>
